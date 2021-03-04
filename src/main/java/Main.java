@@ -22,7 +22,7 @@ public class Main {
                 try {
                     config = builder.getConfiguration();
                 } catch (ConfigurationException e) {
-                    System.out.println("重新加载配置文件错误");
+                    System.out.println("Reload configuration error.");
                     e.printStackTrace();
                 }
             }
@@ -33,7 +33,7 @@ public class Main {
         try {
             config = builder.getConfiguration();
         } catch (ConfigurationException e) {
-            System.out.println("初始化加载配置文件错误");
+            System.out.println("Init configuration error.");
             e.printStackTrace();
         }
         config.getKeys().forEachRemaining(System.out::println);
